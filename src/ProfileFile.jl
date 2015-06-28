@@ -4,7 +4,7 @@ P = Base.Profile
 
 const def = "        - "
 const pre_length = length(def)
-const suffix = ".per"
+const suffix = ".pro"
 
 # For each source file which has profiler-traces this writes a *.prof
 # file. output = [:user, :all]
@@ -46,7 +46,7 @@ function write_to_file(;output=[:user,:all][1])
         pre = def
     end
 
-    # Write to *.per files
+    # Write to *.pro files
     source = Any[]
     loadit = true
     for (i, (hits,line)) in enumerate(zip(n, lilist))
